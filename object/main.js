@@ -34,3 +34,25 @@ function greetFriend() {
 console.log(greetFriend());
 
 console.log("" == 0);
+
+arr.reduce((element, index) => {
+  if (!element[index]) {
+    element[index] = 0;
+  }
+  element[index]++;
+  return element;
+}, {});
+
+arr.map((element, index) => {
+  element.name;
+});
+
+arr.shift();
+arr.pop();
+
+let newARRRR = Object();
+let newA2RRRR = {};
+let newwwww = [];
+let newwww = Array();
+arr.push();
+arr.push();
