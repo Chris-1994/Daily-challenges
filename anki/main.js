@@ -72,16 +72,6 @@ let NEWEwew = Object();
 arr.reduce((element, index) => element + index, 0);
 arr.forEach((element, index) => console.log(element));
 
-const teeest = arr.reduce((elemenet, index) => {
-  if (!elemenet[index]) {
-    elemenet[index] = 0;
-  }
-  elemenet[index]++;
-  return elemenet[index];
-}, {});
-
-console.log(teeest);
-
 arr.map((element, index) => {
   console.log(element.name, index);
 });
@@ -115,19 +105,32 @@ function mmult(arr) {
   for (let i = 0; i < arr.length; i++) {
     product = product * arr[i];
   }
-  
 }
 
-function try(arr){
-  let pro = 1,
-  for (let i = 0; i < arr.length; i++){
-    pro = pro * arr[i]
-  }
-}
-
-function aaa(arr){
+function aaa(arr) {
   let produc = 1;
-  for (let i = 0; i < arr.length; i++){ 
-    product = product * arr[i]
+  for (let i = 0; i < arr.length; i++) {
+    product = product * arr[i];
   }
 }
+
+let List = [1, 2, 4];
+List[1] = "bob";
+delete List[1];
+console.log(List);
+
+for (let key in {}) {
+  key.name;
+}
+
+const newMan = ["car"];
+
+const result = newMan.reduce((element, index) => {
+  if (!element[index]) {
+    element[index] = 0;
+  }
+  element[index]++;
+  return element;
+}, {});
+
+console.log(result);
